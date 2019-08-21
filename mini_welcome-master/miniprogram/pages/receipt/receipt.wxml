@@ -1,0 +1,6 @@
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}">
+<view slot="content">接单</view>
+</cu-custom>
+<view class="padding flex flex-direction">
+  <button class="cu-btn bg-blue margin-tb-sm lg" hidden="{{checkButton}}" bindtap="register">您尚未验证，点击验证</button>
+</view>

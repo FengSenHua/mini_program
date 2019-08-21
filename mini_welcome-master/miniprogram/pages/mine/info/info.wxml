@@ -1,0 +1,48 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <view class="cu-avatar round lg margin-left" wx:key style="background-image:url({{avatarUrl}});">
+    <view class="cu-tag badge {{gender=='1'?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}"></view>
+  </view>
+    <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="cu-form-group margin-top">
+    <view class="title">姓名：</view>
+    <!-- <input placeholder="请输入姓名" value="{{username}}" readonly/> -->
+    <view>{{username}}</view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">性别：</view>
+    <!-- PageCur=='home'?'text-blue':'text-gray'" -->
+    <view wx:if="{{gender=='0'}}">男</view>
+    <view wx:if="{{gender=='1'}}">女</view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">手机号码：</view>
+    <view>{{phone}}</view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">出生日期：</view>
+    <view>{{birthday}}</view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">住址：</view>
+    <view class="picker">
+      {{address[0]}}，{{address[1]}}，{{address[2]}}
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">学校名称：</view>
+    <view>{{school}}</view>
+  </view>
+  <view class="cu-bar bg-white margin-top">
+		<view class="action">
+			证件图片展示
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<image src="{{images[0]}}"></image>
+      <image src="{{images[1]}}"></image>
+		</view>
+	</view>
+</scroll-view>

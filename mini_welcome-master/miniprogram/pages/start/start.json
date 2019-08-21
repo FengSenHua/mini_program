@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home": "/pages/home/home",
+    "mine": "/pages/mine/info/info",
+    "receipt": "/pages/receipt/receipt"
+  }
+}
+

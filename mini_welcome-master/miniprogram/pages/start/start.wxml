@@ -1,0 +1,27 @@
+<home wx:if="{{PageCur=='home'}}"></home>
+<receipt wx:if="{{PageCur=='receipt'}}"></receipt>
+<mine wx:if="{{PageCur=='mine'}}"></mine>
+<!-- 底部导航栏 -->
+<view class="cu-bar tabbar bg-white shadow foot">
+  <!-- 首页跳转 -->
+  <view class="action" bindtap="NavChange" data-cur="home">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabar/home{{PageCur=='home'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='home'?'text-blue':'text-gray'}}">首页</view>
+  </view>
+  <!-- 接单页面跳转 -->
+  <view class="action" bindtap="NavChange" data-cur="receipt">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabar/receipt{{PageCur=='receipt'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='receipt'?'text-blue':'text-gray'}}">接单</view>
+  </view>
+  <!-- 个人信息跳转 -->
+  <view class="action" bindtap="NavChange" data-cur="mine">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabar/mine{{PageCur=='mine'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='mine'?'text-blue':'text-gray'}}">我的</view>
+  </view>
+</view>
